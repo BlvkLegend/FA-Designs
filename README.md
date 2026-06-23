@@ -13,5 +13,5 @@ Turn fabric and beads into a profitable skill. No machine. No big space. No heav
 - 1,000+ students trained
 - Practical & results-focused
 
-**Live Website:** [fadesigns.com](https://your-link-here)  
+**Live Website:** [fadesigns.com](https://blvklegend.github.io/FA-Designs/)  
 - [Wix Landing Page](https://fadesignsng.wixsite.com/fadesignsng-1)
