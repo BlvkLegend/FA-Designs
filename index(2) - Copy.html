@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F.A Designs | Learn Fabric Beading Online | Lagos, Nigeria</title>
+<meta name="description" content="Learn fabric beading from scratch with F.A Designs. Free intro class and a two-week masterclass for beginners. No machine, no large workspace, no startup capital. 1,000+ students trained.">
+<meta name="theme-color" content="#043284">
+<meta property="og:title" content="F.A Designs | Learn Fabric Beading Online">
+<meta property="og:description" content="Free intro class and a two-week masterclass. No machine, no large workspace needed. Trained from Lagos, Nigeria.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#043284;
+  --navy-deep:#021c49;
+  --navy-soft:#1c4a99;
+  --white:#ffffff;
+  --cream:#f6f3ec;
+  --gold:#c79a3d;
+  --gold-light:#e7c87c;
+  --ink:#13182b;
+  --ink-soft:#525a76;
+  --line:#e3decf;
+  --shadow: 0 18px 40px -22px rgba(4,50,132,0.35);
+  --radius:14px;
+  --maxw:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+}
+body{
+  font-family:'Work Sans', sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font:inherit;cursor:pointer;border:none;background:none;}
+h1,h2,h3,h4{font-family:'Fraunces', serif;font-weight:700;letter-spacing:-0.01em;color:var(--navy-deep);}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Work Sans',sans-serif;font-weight:700;font-size:0.74rem;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);
+}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+
+/* ---------- bead divider ---------- */
+.bead-divider{
+  height:14px;width:100%;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='14' viewBox='0 0 64 14'%3E%3Cline x1='0' y1='7' x2='64' y2='7' stroke='%23c79a3d' stroke-width='1' stroke-opacity='0.45'/%3E%3Ccircle cx='8' cy='7' r='4.5' fill='%23043284'/%3E%3Ccircle cx='32' cy='7' r='4.5' fill='%23c79a3d'/%3E%3Ccircle cx='56' cy='7' r='4.5' fill='%23043284'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;background-size:64px 14px;
+  opacity:0.9;
+}
+.bead-divider.light{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='14' viewBox='0 0 64 14'%3E%3Cline x1='0' y1='7' x2='64' y2='7' stroke='%23ffffff' stroke-width='1' stroke-opacity='0.35'/%3E%3Ccircle cx='8' cy='7' r='4.5' fill='%23e7c87c'/%3E%3Ccircle cx='32' cy='7' r='4.5' fill='%23ffffff'/%3E%3Ccircle cx='56' cy='7' r='4.5' fill='%23e7c87c'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;background-size:64px 14px;
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 26px;border-radius:999px;font-weight:700;font-size:0.96rem;
+  min-height:48px;transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--gold);color:var(--navy-deep);box-shadow:var(--shadow);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 22px 40px -18px rgba(199,154,61,0.55);}
+.btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,0.55);}
+.btn-outline:hover{background:rgba(255,255,255,0.1);border-color:var(--white);}
+.btn-navy{background:var(--navy);color:var(--white);}
+.btn-navy:hover{background:var(--navy-deep);transform:translateY(-2px);}
+.btn-block{width:100%;}
+
+/* ---------- nav ---------- */
+header{
+  position:sticky;top:0;z-index:200;
+  background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  isolation:isolate;
+}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:78px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;color:var(--navy-deep);}
+.logo .beads{display:flex;gap:4px;}
+.logo .beads span{width:8px;height:8px;border-radius:50%;display:block;}
+.logo .beads span:nth-child(1){background:var(--navy);}
+.logo .beads span:nth-child(2){background:var(--gold);}
+.logo .beads span:nth-child(3){background:var(--navy);}
+.nav-links{display:flex;align-items:center;gap:34px;font-weight:600;font-size:0.96rem;}
+.nav-links a{position:relative;padding:6px 0;color:var(--ink);}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:width 0.2s ease;}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{display:flex;align-items:center;gap:14px;}
+.nav-cta .btn-navy{padding:11px 22px;font-size:0.9rem;}
+.menu-toggle{display:none;flex-direction:column;gap:5px;width:30px;}
+.menu-toggle span{height:2px;background:var(--navy-deep);border-radius:2px;transition:transform 0.2s ease, opacity 0.2s ease;}
+.menu-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.menu-toggle.active span:nth-child(2){opacity:0;}
+.menu-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media (max-width:880px){
+  .nav-links{
+    position:fixed;top:78px;left:0;right:0;bottom:auto;
+    max-height:calc(100vh - 78px);overflow-y:auto;
+    background:#ffffff;
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:6px 24px 24px;
+    box-shadow:0 24px 40px -16px rgba(4,50,132,0.28);
+    transform:translateY(-10px);opacity:0;pointer-events:none;visibility:hidden;
+    transition:opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    border-top:1px solid var(--line);
+    z-index:10;
+  }
+  .nav-links.open{opacity:1;transform:translateY(0);pointer-events:auto;visibility:visible;}
+  .nav-links a{width:100%;padding:18px 4px;border-bottom:1px solid var(--line);color:var(--ink);}
+  .nav-cta .nav-links-hide{display:none;}
+  .menu-toggle{display:flex;}
+}
+
+/* ========== NEW HERO WITH BACKGROUND IMAGE ========== */
+.hero {
+  position: relative;
+  padding: 64px 0;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--ink);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: 
+    linear-gradient(
+      100deg, 
+      rgba(246, 243, 236, 0.94) 0%, 
+      rgba(246, 243, 236, 0.90) 20%, 
+      rgba(246, 243, 236, 0.78) 40%, 
+      rgba(246, 243, 236, 0.55) 55%, 
+      rgba(246, 243, 236, 0.25) 70%, 
+      rgba(246, 243, 236, 0.05) 85%, 
+      transparent 100%
+    ),
+    url('hero-bkg.jpeg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.hero-copy {
+  max-width: 560px;
+}
+
+.hero h1 {
+  color: var(--navy-deep);
+  font-size: clamp(2.3rem, 4.2vw, 3.3rem);
+  line-height: 1.08;
+  margin: 18px 0 20px;
+}
+
+.hero p.lead {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin-bottom: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.hero .eyebrow { color: var(--gold); }
+
+/* Strong white overlay on mobile for better text readability */
+@media (max-width: 980px) {
+  .hero-bg {
+    background-position: center center;
+    background-image: 
+      linear-gradient(
+        180deg, 
+        rgba(246, 243, 236, 0.95) 0%, 
+        rgba(246, 243, 236, 0.92) 35%, 
+        rgba(246, 243, 236, 0.78) 60%, 
+        rgba(246, 243, 236, 0.55) 85%
+      ),
+      url('hero-bkg.jpeg');
+  }
+  .hero {
+    min-height: 560px;
+    padding: 100px 0 80px;
+  }
+  .hero-copy { max-width: 100%; }
+}
+
+/* Button styles for hero */
+.hero .btn-outline {
+  background: transparent;
+  color: var(--navy-deep);
+  border: 1.5px solid var(--line);
+}
+.hero .btn-outline:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.trust-strip{
+  display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line);padding-top:22px;
+}
+.trust-item{flex:1 1 150px;padding-right:18px;}
+.trust-item strong{display:block;font-family:'Fraunces',serif;font-size:1.5rem;color:var(--navy);}
+.trust-item span{font-size:0.84rem;color:var(--ink-soft);}
+
+/* ---------- section scaffolding ---------- */
+section{padding:84px 0;}
+.section-head{max-width:640px;margin-bottom:48px;}
+.section-head h2{font-size:clamp(1.8rem, 3vw, 2.4rem);margin:12px 0 14px;}
+.section-head p{color:var(--ink-soft);font-size:1.04rem;}
+.bg-cream{background:var(--cream);}
+
+/* ---------- why grid ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.why-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 24px;
+}
+.why-card .icon{width:42px;height:42px;margin-bottom:18px;}
+.why-card h3{font-size:1.08rem;color:var(--navy-deep);margin-bottom:10px;}
+.why-card p{color:var(--ink-soft);font-size:0.94rem;}
+@media (max-width:980px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.why-grid{grid-template-columns:1fr;}}
+
+/* ---------- courses ---------- */
+.course-grid{display:grid;grid-template-columns:1fr;gap:28px;}
+.course-card{
+  border-radius:18px;padding:34px;display:flex;flex-direction:column;
+  border:1px solid var(--line);background:var(--white);
+}
+.course-card.featured{
+  background:var(--navy);color:var(--white);border:none;box-shadow:var(--shadow);
+}
+.course-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:6px;}
+.price-tag{
+  font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;
+  background:var(--gold);color:var(--navy-deep);padding:6px 16px;border-radius:999px;flex-shrink:0;
+}
+.course-card.featured .price-tag{background:var(--gold-light);}
+.course-card h3{font-size:1.45rem;margin-bottom:6px;}
+.course-card.featured h3{color:var(--white);}
+.best-for{font-size:0.88rem;color:var(--ink-soft);margin-bottom:22px;}
+.course-card.featured .best-for{color:rgba(255,255,255,0.78);}
+.bead-list{margin-bottom:8px;}
+.bead-list li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;font-size:0.96rem;border-bottom:1px solid var(--line);}
+.course-card.featured .bead-list li{border-color:rgba(255,255,255,0.16);}
+.bead-list li .dot{width:9px;height:9px;border-radius:50%;background:var(--navy);margin-top:7px;flex-shrink:0;}
+.course-card.featured .bead-list li .dot{background:var(--gold-light);}
+.bead-list li:last-child{border-bottom:none;}
+.two-col-list{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;}
+.col-label{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold-light);margin:18px 0 4px;}
+.bonus-box{
+  margin-top:20px;padding:18px 20px;border-radius:12px;
+  background:rgba(255,255,255,0.08);border:1px dashed rgba(255,255,255,0.3);
+}
+.bonus-box h4{font-family:'Work Sans',sans-serif;font-size:0.86rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold-light);margin-bottom:10px;}
+.course-card .btn{margin-top:auto;align-self:flex-start;}
+@media (max-width:900px){.course-grid{grid-template-columns:1fr;} .two-col-list{grid-template-columns:1fr;}}
+
+/* ---------- lead form ---------- */
+.form-wrap{
+  display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;
+}
+.form-card{
+  background:var(--white);border:1px solid var(--line);border-radius:18px;
+  padding:38px;box-shadow:var(--shadow);
+}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:0.86rem;font-weight:600;margin-bottom:7px;color:var(--ink);}
+.field input{
+  width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;
+  font-size:0.98rem;font-family:'Work Sans',sans-serif;color:var(--ink);
+  transition:border-color 0.15s ease;
+}
+.field input:focus{border-color:var(--navy);outline:none;}
+.privacy-note{font-size:0.8rem;color:var(--ink-soft);margin-top:12px;text-align:center;}
+.form-success{display:none;text-align:center;padding:30px 10px;}
+.form-success h3{margin-bottom:10px;}
+.form-success p{color:var(--ink-soft);}
+@media (max-width:900px){.form-wrap{grid-template-columns:1fr;gap:30px;}}
+
+/* ---------- testimonials ---------- */
+.reviews-strip{
+  display:flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.reviews-strip .stars{display:flex;gap:3px;}
+.reviews-strip .stars svg{width:18px;height:18px;}
+.reviews-strip span{font-size:0.92rem;color:var(--ink-soft);font-weight:600;}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch;}
+.review-card{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px 24px;display:flex;flex-direction:column;
+}
+.review-card .stars{display:flex;gap:3px;margin-bottom:14px;}
+.review-card .stars svg{width:15px;height:15px;fill:var(--gold);}
+.review-card p.quote{color:var(--ink);font-size:0.98rem;line-height:1.55;flex-grow:1;margin-bottom:18px;}
+.review-card p.quote::before{content:"\201C";}
+.review-card p.quote::after{content:"\201D";}
+.review-who{display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid var(--line);}
+.review-avatar{
+  width:38px;height:38px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-weight:700;font-size:0.92rem;color:var(--white);
+}
+.review-who strong{display:block;font-size:0.92rem;color:var(--navy-deep);}
+.review-who span{font-size:0.8rem;color:var(--ink-soft);}
+
+/* chat-style proof card */
+.review-chat{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 22px 20px;display:flex;flex-direction:column;
+}
+.review-chat .chat-label{
+  font-size:0.74rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;
+  color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:8px;
+}
+.review-chat .chat-label svg{width:15px;height:15px;flex-shrink:0;}
+.chat-bubbles{display:flex;flex-direction:column;gap:8px;flex-grow:1;}
+.bubble{
+  max-width:84%;padding:9px 13px;border-radius:14px;font-size:0.9rem;line-height:1.42;
+  position:relative;
+}
+.bubble.in{
+  align-self:flex-start;background:var(--white);border:1px solid var(--line);
+  border-bottom-left-radius:4px;color:var(--ink);
+}
+.bubble.out{
+  align-self:flex-end;background:#dcf2c8;color:#0c3a0c;
+  border-bottom-right-radius:4px;
+}
+.bubble .time{display:block;font-size:0.68rem;color:var(--ink-soft);margin-top:3px;text-align:right;}
+.bubble.in .time{color:var(--ink-soft);}
+
+@media (max-width:980px){.review-grid{grid-template-columns:1fr;}}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:54px;align-items:center;}
+.about-badge{
+  width:100%;aspect-ratio:1/1;max-width:340px;border-radius:50%;
+  background:linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+  display:flex;align-items:center;justify-content:center;position:relative;
+  box-shadow:var(--shadow);margin:0 auto;
+}
+.about-badge .tagline{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:500;color:var(--gold-light);
+  text-align:center;font-size:1.3rem;padding:0 40px;line-height:1.3;
+}
+.about-badge svg{position:absolute;inset:0;width:100%;height:100%;}
+.about-copy p{color:var(--ink-soft);margin-bottom:16px;font-size:1.02rem;}
+.about-stats{display:flex;gap:36px;margin-top:26px;}
+.about-stats div strong{display:block;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--navy);}
+.about-stats div span{font-size:0.84rem;color:var(--ink-soft);}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;}.about-badge{max-width:240px;}}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.contact-card{
+  background:var(--navy);color:var(--white);border-radius:18px;padding:38px;
+}
+.contact-card h3{color:var(--white);margin-bottom:22px;}
+.contact-row{display:flex;align-items:center;gap:14px;margin-bottom:18px;font-size:1rem;}
+.contact-row .ic{width:20px;height:20px;flex-shrink:0;}
+.map-frame{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:300px;}
+.map-frame iframe{width:100%;height:100%;min-height:300px;border:0;}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-deep);color:rgba(255,255,255,0.7);padding:44px 0 28px;}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px;padding-top:24px;font-size:0.88rem;}
+.footer-links{display:flex;gap:24px;}
+.footer-links a:hover{color:var(--white);}
+
+/* ---------- fade-in ---------- */
+.fade-up{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease, transform 0.6s ease;}
+.fade-up.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-row">
+    <a href="#home" class="logo">
+      <span class="beads"><span></span><span></span><span></span></span>
+      F.A Designs
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#courses" class="btn btn-navy nav-links-hide">Apply Now</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ===== NEW HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Online Fabric Beading Training &middot; Lagos, Nigeria</span>
+        <h1>Turn Fabric And Beads Into A Skill That Pays</h1>
+        <p class="lead">Learn fabric beading from scratch with a method built for beginners. No machine, no large workspace, no starting capital. Just fabric, beads, and a plan that works from your own home.</p>
+        <div class="hero-actions">
+          <a href="#free-class" class="btn btn-primary">Start the Free Class</a>
+          <a href="https://wa.me/c/2347030483813" target="_blank" rel="noopener" class="btn btn-outline">Apply for the Masterclass</a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-item"><strong>1,000+</strong><span>Students Trained</span></div>
+          <div class="trust-item"><strong>0</strong><span>Equipment Required</span></div>
+          <div class="trust-item"><strong>100%</strong><span>Online, From Lagos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY ===== -->
+  <section class="bg-cream">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="eyebrow">Why Fabric Beading</span>
+        <h2>A Skill Built For Beginners Who Need Results</h2>
+        <p>No prior sewing or design background needed. Every lesson is built around what a true beginner already has access to.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-up">
+          <svg class="icon" viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="14" stroke="#043284" stroke-width="2"/><path d="M21 14v14M17 17.3c0-1.8 1.8-3.1 4-3.1s4 1.1 4 2.8-1.8 2.5-4 2.7-4 1.1-4 2.8 1.8 3 4 3 4-1.2 4-2.9" stroke="#c79a3d" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>No Startup Capital</h3>
+          <p>Begin with fabric and beads you can already source locally. No expensive machines or rented studio space.</p>
+        </div>
+        <div class="why-card fade-up">
+          <svg class="icon" viewBox="0 0 42 42" fill="none"><path d="M6 20L21 8l15 12" stroke="#043284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 18v14a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V18" stroke="#043284" stroke-width="2" stroke-linejoin="round"/><rect x="17.5" y="24" width="7" height="9" stroke="#c79a3d" stroke-width="2"/></svg>
+          <h3>Work From Home</h3>
+          <p>Train and create from wherever you are. The method is built around small spaces and flexible hours.</p>
+        </div>
+        <div class="why-card fade-up">
+          <svg class="icon" viewBox="0 0 42 42" fill="none"><path d="M22 8h9a2 2 0 0 1 2 2v9a2 2 0 0 1-.6 1.4L19.4 33.4a2 2 0 0 1-2.8 0l-8-8a2 2 0 0 1 0-2.8L21.6 9.6A2 2 0 0 1 23 9" stroke="#043284" stroke-width="2" stroke-linejoin="round"/><circle cx="27" cy="15" r="2.2" fill="#c79a3d"/></svg>
+          <h3>Market What You Make</h3>
+          <p>Every course includes guidance on pricing, presenting, and selling your beadwork, not just how to make it.</p>
+        </div>
+        <div class="why-card fade-up">
+          <svg class="icon" viewBox="0 0 42 42" fill="none"><path d="M7 33h6v-7h7v-7h7v-7h8" stroke="#043284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="9" r="2.6" fill="#c79a3d"/></svg>
+          <h3>Learn At Your Pace</h3>
+          <p>Step-by-step lessons broken into clear stages, from your first stitch through to your first sale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COURSES ===== -->
+  <section id="courses">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="eyebrow">Courses</span>
+        <h2>Choose Your Course</h2>
+        <p>Start with the free class. Move into the masterclass when you are ready to build real technique and income.</p>
+      </div>
+      <div class="course-grid">
+
+        <div class="course-card fade-up">
+          <div class="course-top">
+            <h3>Introduction To Fabric Beading</h3>
+            <span class="price-tag">FREE</span>
+          </div>
+          <p class="best-for">Best for complete beginners deciding if fabric beading is for them.</p>
+          <ul class="bead-list">
+            <li><span class="dot"></span>Introduction to fabric beading</li>
+            <li><span class="dot"></span>Materials needed for the training</li>
+            <li><span class="dot"></span>How to make the trendy fabric beading design</li>
+            <li><span class="dot"></span>How to market your fabric beading design</li>
+            <li><span class="dot"></span>Live questions and answers</li>
+            <li><span class="dot"></span>Submission of class assignment</li>
+          </ul>
+          <a href="#free-class" class="btn btn-navy" style="margin-top:24px;">Start Free Course</a>
+        </div>
+
+        <div class="course-card featured fade-up">
+          <div class="course-top">
+            <h3>Two-Week Fabric Beading Masterclass</h3>
+            <span class="price-tag">&#8358;10,000</span>
+          </div>
+          <p class="best-for">Best for students ready to learn the full technique set and start earning from it.</p>
+          <div class="two-col-list">
+            <div>
+              <p class="col-label">Foundations</p>
+              <ul class="bead-list">
+                <li><span class="dot"></span>Introduction to fabric beading</li>
+                <li><span class="dot"></span>Identifying fabric beading materials</li>
+                <li><span class="dot"></span>Preparing fabric for beading</li>
+                <li><span class="dot"></span>Creating patterns for fabric beading</li>
+              </ul>
+            </div>
+            <div>
+              <p class="col-label">Techniques</p>
+              <ul class="bead-list">
+                <li><span class="dot"></span>Cluster beading, with or without penetrating the lining</li>
+                <li><span class="dot"></span>Sequins beading, with or without penetrating the lining</li>
+                <li><span class="dot"></span>Spiral beading, with or without penetrating the lining</li>
+                <li><span class="dot"></span>Beaded fringe, with or without penetrating the lining</li>
+                <li><span class="dot"></span>Beading without spacing</li>
+                <li><span class="dot"></span>Sourcing materials and marketing your beadwork for income</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bonus-box">
+            <h4>Bonus Access</h4>
+            <ul class="bead-list" style="margin:0;">
+              <li><span class="dot"></span>Class videos, available all year</li>
+              <li><span class="dot"></span>Instagram ads training for your beadwork</li>
+              <li><span class="dot"></span>A private group of fellow fabric beading students</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/c/2347030483813" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:24px;">Apply on WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="eyebrow">From The Students</span>
+        <h2>What Past Students Are Saying</h2>
+        <p>Real messages and finished beadwork from students who started exactly where you are now.</p>
+      </div>
+
+      <div class="review-grid">
+        <div class="review-card fade-up">
+          <div class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          </div>
+          <p class="quote">My practicals from the paid class came out so much better than I expected. Seeing my own beadwork finished and neat was all the proof I needed. If you are still deciding, a trial class will convince you the way it convinced me.</p>
+          <div class="review-who">
+            <div class="review-avatar" style="background:var(--navy);">M</div>
+            <div>
+              <strong>Modupe A.</strong>
+              <span>Masterclass Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-up">
+          <div class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          </div>
+          <p class="quote">She checks in to make sure I am actually practicing, not just watching videos. That kind of follow-up is rare. I told her myself: she is such a great tutor.</p>
+          <div class="review-who">
+            <div class="review-avatar" style="background:var(--gold);color:var(--navy-deep);">C</div>
+            <div>
+              <strong>Chiamaka O.</strong>
+              <span>Free Class Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-chat fade-up">
+          <div class="chat-label">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#c79a3d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            WhatsApp Follow-Up
+          </div>
+          <div class="chat-bubbles">
+            <div class="bubble out">Good morning House<br>The free Beading video as promised by …<span class="time">10:20 AM ✓✓</span></div>
+            <div class="bubble in">Yes<span class="time">10:20 AM</span></div>
+            <div class="bubble in">Thanks so much. Ur videos has been so helpful<span class="time">10:20 AM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bead-divider"></div>
+  </section>
+
+  <!-- ===== FREE CLASS FORM ===== -->
+  <section class="bg-cream" id="free-class">
+    <div class="container form-wrap">
+      <div class="fade-up">
+        <span class="eyebrow">Free Intro Class</span>
+        <h2>Get Free Access To The Intro Class</h2>
+        <p style="color:var(--ink-soft);font-size:1.02rem;margin-top:12px;">Enter your details below and the first lesson, along with the materials list, will be sent straight to you.</p>
+      </div>
+      <div class="form-card fade-up">
+        <form id="leadForm" novalidate>
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input type="text" id="f-name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-email">Email address</label>
+            <input type="email" id="f-email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone number</label>
+            <input type="tel" id="f-phone" name="phone" required autocomplete="tel">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Me The Free Class</button>
+          <p class="privacy-note">Your information stays private. Used only to contact you about this course.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <h3>You're In</h3>
+          <p>Check your email and WhatsApp shortly for your first lesson and materials list.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-badge fade-up">
+        <svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="170" cy="40" r="7" fill="#c79a3d"/>
+          <circle cx="300" cy="170" r="7" fill="#e7c87c"/>
+          <circle cx="170" cy="300" r="7" fill="#c79a3d"/>
+          <circle cx="40" cy="170" r="7" fill="#e7c87c"/>
+          <circle cx="248" cy="92" r="5" fill="#ffffff" opacity="0.6"/>
+          <circle cx="248" cy="248" r="5" fill="#ffffff" opacity="0.6"/>
+          <circle cx="92" cy="248" r="5" fill="#ffffff" opacity="0.6"/>
+          <circle cx="92" cy="92" r="5" fill="#ffffff" opacity="0.6"/>
+        </svg>
+        <span class="tagline">&ldquo;Creativity At Its Best&rdquo;</span>
+      </div>
+      <div class="about-copy fade-up">
+        <span class="eyebrow">About F.A Designs</span>
+        <h2 style="margin:14px 0 18px;">A Skill Found Out Of Necessity, Now Passed On</h2>
+        <p>F.A Designs began with a search for a skill that needed no machine, no large workspace, and no major startup capital. Fabric beading was the answer.</p>
+        <p>Since 2021, the program has trained more than 1,000 students, both online and offline, in a craft that turns fabric and beads into wearable, sellable designs. The training is built for anyone starting from zero: practical, structured, and focused on results you can use right away.</p>
+        <div class="about-stats">
+          <div><strong>2021</strong><span>Program Started</span></div>
+          <div><strong>1,000+</strong><span>Students Trained</span></div>
+          <div><strong>2</strong><span>Courses Offered</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="bg-cream" id="contact">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="eyebrow">Contact</span>
+        <h2>Get In Touch</h2>
+        <p>Have a question before you apply? Reach out directly on WhatsApp or by phone.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card fade-up">
+          <h3>Talk To Us</h3>
+          <div class="contact-row">
+            <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 12l5 2v3a2 2 0 0 1-2 2c-8 0-14-6-14-14a2 2 0 0 1 2-2z" stroke="#e7c87c" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span>+234 703 048 3813</span>
+          </div>
+          <div class="contact-row">
+            <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-7.4 7-12a7 7 0 0 0-14 0c0 4.6 7 12 7 12z" stroke="#e7c87c" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="#e7c87c" stroke-width="1.6"/></svg>
+            <span>68 Ailegun Rd, Ejigbo, Lagos, Nigeria</span>
+          </div>
+          <a href="https://wa.me/c/2347030483813" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:18px;">Message on WhatsApp</a>
+        </div>
+        <div class="map-frame fade-up">
+          <iframe src="https://www.google.com/maps?q=68+Ailegun+Rd,+Ejigbo,+Lagos,+Nigeria&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="F.A Designs location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="bead-divider light" style="margin-bottom:28px;"></div>
+    <div class="footer-row">
+      <span>&copy; 2026 F.A Designs. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// mobile nav toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.classList.toggle('active', isOpen);
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  menuToggle.classList.remove('active');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+
+// fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// lead form handling
+// NOTE: this is a static front end. Wire #leadForm to a real endpoint
+// (Formspree, Wix Forms, EmailJS, or a custom backend) before launch.
+const leadForm = document.getElementById('leadForm');
+const formSuccess = document.getElementById('formSuccess');
+leadForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!leadForm.checkValidity()) { leadForm.reportValidity(); return; }
+  leadForm.style.display = 'none';
+  formSuccess.style.display = 'block';
+});
+</script>
+
+</body>
+</html>
